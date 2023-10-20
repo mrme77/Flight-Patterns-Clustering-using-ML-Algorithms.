@@ -20,8 +20,7 @@ def create_database():
     cursor = conn.cursor()
 
     # Create the flight_data table
-    cursor.execute(''' DROP TABLE IF EXISTS flight_data''')
-    cursor.execute(''' DROP TABLE IF EXISTS navigation_data''')
+    
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS flight_data (
             id INTEGER PRIMARY KEY,
