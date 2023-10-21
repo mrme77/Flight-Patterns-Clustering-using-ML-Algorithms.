@@ -9,6 +9,23 @@ Date: October 21, 2023
 This project uses a machine learning algorithm to cluster flight patterns. The algorithm is trained on a dataset of flight data, and then used to predict the cluster for each flight. The results can be used to identify flight patterns in a specific geographical region.
 
 to be continued....
+
+## Prerequisites
+
+1. Git
+1. Python 3.7+ (3.11+ preferred)
+1. VS Code Editor
+1. VS Code Extension: Python (by Microsoft)
+
+The following modules are required: 
+
+
+| Module          | Version  |
+|-----------------|----------|
+| time            | 3.11.4   |
+| collections     | 3.11.4   |
+
+
 ## Data Sources
 
 The project utilizes live data from FlightAware, a leading provider of aviation data and flight tracking information, through PiAware 7.2 running on a Raspberry PI. The original data sources include various flight-related information such as aircraft identifiers, timestamps, altitude, latitude, longitude, speed, heading, and transponder codes.
