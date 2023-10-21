@@ -14,9 +14,9 @@ piaware_ip = config.get('PiAware', 'IP')
 piaware_port = config.getint('PiAware', 'Port')
 
 
-# Create a SQLite database and define flight_data and navigation table
+# Create a SQLite database and define flight_data and navigation tables
 def create_database():
-    conn = sqlite3.connect('flight_data.db')  # Replace with the desired database name
+    conn = sqlite3.connect('flight_data.db')  
     cursor = conn.cursor()
 
     # Create the flight_data table
@@ -50,7 +50,7 @@ def create_database():
     conn.commit()
     conn.close()
 
-# Create the database and flight_data table
+
 create_database()
 
 # Handle Ctrl+C to gracefully exit the program
@@ -66,7 +66,7 @@ def data_stream_and_store():
     cursor = conn.cursor()
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.settimeout(600)  # Increase the timeout to a larger value
+    sock.settimeout(1200)  
 
     try:
         sock.connect((piaware_ip, piaware_port))
