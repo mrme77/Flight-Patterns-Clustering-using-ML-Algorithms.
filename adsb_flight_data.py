@@ -20,7 +20,8 @@ def create_database():
     cursor = conn.cursor()
 
     # Create the flight_data table
-    
+    #cursor.execute(''' DROP TABLE IF EXISTS flight_data''')
+    #cursor.execute(''' DROP TABLE IF EXISTS navigation_data''')
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS flight_data (
             id INTEGER PRIMARY KEY,
@@ -65,7 +66,7 @@ def data_stream_and_store():
     cursor = conn.cursor()
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.settimeout(600)  
+    sock.settimeout(600)  # Increase the timeout to a larger value
 
     try:
         sock.connect((piaware_ip, piaware_port))
@@ -88,17 +89,20 @@ def data_stream_and_store():
 
 
                 # Insert the data into the correct table
-                if fields[1] == '3':
-                      cursor.execute("INSERT INTO flight_data (message_type, aircraft_icao_id, date, timestamp, altitude, latitude, longitude) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                if fields[1] == '3' and len(fields)>20:
+                   
+                   cursor.execute("INSERT INTO flight_data (message_type, aircraft_icao_id, date, timestamp, altitude, latitude, longitude) VALUES (?, ?, ?, ?, ?, ?, ?)",
                   (fields[0]+fields[1], fields[4], fields[6], fields[7], fields[11], fields[14], fields[15]))
-                      print(f"Record added - Message Type: {fields[0]+fields[1]}, Aircraft: {fields[4]}, Altitude: {fields[11]}, Latitude: {fields[14]}, Longitude: {fields[15]}")
+                   print(f"Record added - Message Type: {fields[0]+fields[1]}, Aircraft: {fields[4]}, Altitude: {fields[11]}, Latitude: {fields[14]}, Longitude: {fields[15]}")
                 
-                elif fields[1] == '4':
-                      cursor.execute("INSERT INTO navigation_data (message_type, aircraft_icao_id, date, timestamp, speed, heading) VALUES (?, ?, ?, ?, ?, ?)",
+                elif fields[1] == '4'and len(fields)>20:
+                     
+                     cursor.execute("INSERT INTO navigation_data (message_type, aircraft_icao_id, date, timestamp, speed, heading) VALUES (?, ?, ?, ?, ?, ?)",
                   (fields[0]+fields[1], fields[4], fields[6], fields[7], fields[12], fields[13]))
-                      print(f"Record added - Message Type: {fields[0]+fields[1]}, Aircraft: {fields[4]}, Speed: {fields[12]}, Heading: {fields[13]}")
+                     print(f"Record added - Message Type: {fields[0]+fields[1]}, Aircraft: {fields[4]}, Speed: {fields[12]}, Heading: {fields[13]}")
                 # Commit the changes to the database
                 conn.commit()
+                time.sleep(10)
 
             except socket.timeout:
                 print("Socket timeout, waiting for data...")
