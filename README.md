@@ -44,7 +44,7 @@ The project utilizes live data from FlightAware, a leading provider of aviation 
 
 ## Flowchart
 
-[!Flowchart](flow.jpg)
+![Flowchart](flow.jpg)
 
 
 ## Video
