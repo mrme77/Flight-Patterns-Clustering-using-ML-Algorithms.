@@ -1,16 +1,3 @@
-import socket
-import sqlite3
-import configparser
-import time
-import signal
-import sys
-# Load configuration from a file
-config = configparser.ConfigParser()
-config.read('config.ini')
-
-# Get the PiAware configuration parameters
-piaware_ip = config.get('PiAware', 'IP')
-piaware_port = config.getint('PiAware', 'Port')
 # Create a SQLite database and define flight_data and navigation table
 def create_database():
     conn = sqlite3.connect('flight_data.db')  # Replace with the desired database name
