@@ -4,7 +4,6 @@ import configparser
 import time
 import signal
 import sys
-
 # Load configuration from a file
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -12,7 +11,6 @@ config.read('config.ini')
 # Get the PiAware configuration parameters
 piaware_ip = config.get('PiAware', 'IP')
 piaware_port = config.getint('PiAware', 'Port')
-
 # Create a SQLite database and define flight_data and navigation table
 def create_database():
     conn = sqlite3.connect('flight_data.db')  # Replace with the desired database name
@@ -111,11 +109,3 @@ def data_stream_and_store():
                 sock.close()
         except Exception as e:
             print(f"Outer Error: {e}")
-
-# Start the data stream and database operations
-if __name__ == "__main__":
-    # Register the signal handler for Ctrl+C
-    signal.signal(signal.SIGINT, signal_handler)
-    
-    # Start the data stream and database operations
-    data_stream_and_store()
