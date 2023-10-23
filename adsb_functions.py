@@ -1,4 +1,4 @@
-# Create a SQLite database and define flight_data and navigation table
+
 def create_database():
     conn = sqlite3.connect('flight_data.db')  # Replace with the desired database name
     cursor = conn.cursor()
@@ -86,6 +86,11 @@ def data_stream_and_store():
                     except socket.timeout:
                         print("Socket timeout, waiting for data...")
                         time.sleep(10)
+                        print('Restarting socket')
+                        sock.close()  # Close the existing socket
+                        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Create a new socket
+                        sock.settimeout(600)  # Set timeout for the new socket
+                        sock.connect((piaware_ip, piaware_port))
                     except Exception as e:
                         print(f"Error: {e}")
             except socket.error as e:
