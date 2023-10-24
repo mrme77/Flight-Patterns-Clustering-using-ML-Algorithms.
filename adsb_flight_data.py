@@ -1,24 +1,19 @@
 import socket
-import sqlite3
-import configparser
 import time
 import signal
 import sys
-from adsb_functions import create_database, data_stream_and_store
+import adsb_functions
 
-# Load configuration from a file
-config = configparser.ConfigParser()
-config.read('config.ini')
 
-# Get the PiAware configuration parameters
-piaware_ip = config.get('PiAware', 'IP')
-piaware_port = config.getint('PiAware', 'Port')
+#Handle Ctrl+C to gracefully exit the program
+def signal_handler(sig, frame):
+    print("Exiting the program.")
+    sys.exit(0)
 
 if __name__ == "__main__":
     # Register the signal handler for Ctrl+C
     signal.signal(signal.SIGINT, signal_handler)
-    
-    # Start the data stream and database operations
+
+    # Create the database and start the data stream and database operations
+    create_database()
     data_stream_and_store()
-
-
