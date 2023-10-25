@@ -30,6 +30,16 @@ def create_database():
 
 # Create a function to handle the data stream and database operations
 def data_stream_and_store():
+     """
+    Continuously streams and stores data received from a network socket connected to a Raspberry Pi running PI Aware 7.2.
+
+    This function connects to a SQLite database, establishes a network socket connection, and continuously receives data from the
+    socket. It processes and inserts the data into the appropriate tables in the database based on message type, including flight
+    data and navigation data. The function also handles socket timeouts and errors gracefully.
+
+    Returns:
+        None
+    """
     while True:
         try:
             # Connect to the SQLite database
