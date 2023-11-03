@@ -2,11 +2,11 @@
 
 Author: Pasquale Salomone
 <br>
-Date: October 21, 2023
+Date: November 3, 2023
 
 ## Overview
 
-This project uses a machine learning algorithm to cluster flight patterns. The algorithm is trained on a dataset of flight data, and then used to predict the cluster for each flight. The results can be used to identify flight patterns in a specific geographical region.
+This project focuses on implementing algorithms like K-Means and Mean Shift to cluster flight data. Both models are fitted on flight data, without splitting into training and testing set since the test set will not have true labels available. The intent is assign each flight to a clsuter based on specific features to possibly identify flight patterns in the geographical region closer to the ADSB receiver.
 
 to be continued....
 
@@ -18,13 +18,31 @@ to be continued....
 1. VS Code Extension: Python (by Microsoft)
 
 The following modules are required: 
-
+import pandas as pd
+import numpy as np
+import folium
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+import os
+import haversine
+from folium.plugins import HeatMap
+from folium import PolyLine
+import sqlite3
+from shapely.geometry import Point
+from scipy.stats import linregress
 
 | Module          | Version  |
 |-----------------|----------|
 | time            | 3.11.4   |
 | collections     | 3.11.4   |
-
+| pandas          | 1.5.3    |
+| numpy           | 1.23.2   |
+| folium          | 0.13.1   |
+| matplotlib      | 3.5.3    |
+| os              | 1.11.0   |
+| haversine       | 3.2.1    |
+| sqlite3         | 3.39.2   |
+| linregress      | 1.9.3    |
 
 ## Data Sources
 
