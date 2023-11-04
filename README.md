@@ -34,6 +34,8 @@ The following modules are required:
 | haversine       | 3.2.1    |
 | sqlite3         | 3.39.2   |
 | linregress      | 1.9.3    |
+| socket	        | 2.1.7    |
+| configparser	  | 0.4.1    |
 
 ## Data Sources
 
