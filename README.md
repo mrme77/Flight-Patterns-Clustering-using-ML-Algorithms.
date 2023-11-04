@@ -6,7 +6,7 @@ Date: November 3, 2023
 
 ## Overview
 
-This project focuses on implementing algorithms like K-Means and Mean Shift to cluster flight data. Both models are fitted on flight data, without splitting into training and testing set since the test set will not have true labels available. The intent is assign each flight to a clsuter based on specific features to possibly identify flight patterns in the geographical region closer to the ADSB receiver.
+This project is dedicated to the exploration of flight patterns using machine learning algorithms, specifically K-Means and Mean Shift. The primary objective is to cluster flight data based on relevant features, aiming to uncover potential flight patterns within the geographical area surrounding the ADSB receiver. Unlike traditional machine learning tasks, the dataset is not divided into training and testing sets, as the test set lacks true labels. Instead, the focus is on unsupervised clustering to group flights based on their characteristics. The ultimate goal is to gain insights into flight behavior and identify distinct patterns within the region of interest.
 
 to be continued....
 
@@ -45,7 +45,9 @@ The project utilizes live data from FlightAware, a leading provider of aviation 
 
 
 ## Output
-
+Project7Notebook.ipynb
+adsb_flight_data.py
+adsb_functions.py
 
 
 ## Flowchart
