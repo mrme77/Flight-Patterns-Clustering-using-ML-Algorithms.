@@ -18,18 +18,6 @@ to be continued....
 1. VS Code Extension: Python (by Microsoft)
 
 The following modules are required: 
-import pandas as pd
-import numpy as np
-import folium
-import matplotlib.pyplot as plt
-import matplotlib.cm as cm
-import os
-import haversine
-from folium.plugins import HeatMap
-from folium import PolyLine
-import sqlite3
-from shapely.geometry import Point
-from scipy.stats import linregress
 
 | Module          | Version  |
 |-----------------|----------|
