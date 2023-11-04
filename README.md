@@ -49,9 +49,11 @@ The project utilizes live data from FlightAware, a leading provider of aviation 
 
 ## Deployment
 
-+ Project7Notebook.ipynb Jupyter Notebook for executing the main scope of this project
++ Project7Notebook.ipynb It is a Jupyter Notebook which executes Data Collection, Exploratory Data Analysis (EDA), Data Preprocessing, Model Fitting and Evaluation, and display results.
++ 
 + adsb_flight_data.py Contains the script for receiving and processing data from an Automatic 
-  Dependent Surveillance-Broadcast (ADS-B) system
+  Dependent Surveillance-Broadcast (ADS-B) system.
+  
 + adsb_functions.py Contains the data description language (DDL) syntax for creation of tables as well as the data manipulation language (DML) for inserting data, and the the function (data_stream_and_store) the continuous streaming and storage of data received from a network socket connected to a Raspberry Pi running Pi Aware 7.2. 
 
 
