@@ -8,6 +8,7 @@ Date: November 3, 2023
 
 <p>This project is dedicated to the exploration of flight patterns using machine learning algorithms, specifically K-Means and Mean Shift.The primary objective is to cluster flight data based on relevant features, aiming to uncover potential flight patterns within the geographical area surrounding the ADSB receiver. Unlike traditional machine learning tasks, the dataset is not divided into training and testing sets, as the test set lacks true labels. Instead, the focus is on unsupervised clustering to group flights based on their characteristics. The ultimate goal is to gain insights into flight behavior and identify distinct patterns within the region of interest.</p>
 
+
 ![PI](pi_receiver.jpg)
 
 
