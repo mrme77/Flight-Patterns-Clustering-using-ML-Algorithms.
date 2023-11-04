@@ -61,8 +61,10 @@ The project utilizes live data from FlightAware, a leading provider of aviation 
 ## Flowchart
 
 ![Flowchart](flow.jpg)
-![Clusters](initial_clusters.jpg)
-## Video
+
+## Visualizations
+![Clusters](initial_cluster_altitude_speed.jpg)
+
 
 
 
