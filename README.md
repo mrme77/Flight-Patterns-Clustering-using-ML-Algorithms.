@@ -50,7 +50,7 @@ The project utilizes live data from FlightAware, a leading provider of aviation 
 ## Deployment
 
 + Project7Notebook.ipynb It is a Jupyter Notebook which executes Data Collection, Exploratory Data Analysis (EDA), Data Preprocessing, Model Fitting and Evaluation, and display results.
-+ 
+  
 + adsb_flight_data.py Contains the script for receiving and processing data from an Automatic 
   Dependent Surveillance-Broadcast (ADS-B) system.
   
