@@ -47,10 +47,10 @@ The project utilizes live data from FlightAware, a leading provider of aviation 
 - [Transponder Codes](https://code7700.com/transponder.htm)
 
 
-## Output
-Project7Notebook.ipynb
-adsb_flight_data.py
-adsb_functions.py
+## Deployment
+* Project7Notebook.ipynb
+* adsb_flight_data.py
+* adsb_functions.py
 
 
 ## Flowchart
