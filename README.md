@@ -64,7 +64,7 @@ The project utilizes live data from FlightAware, a leading provider of aviation 
 
 ![Flowchart](flow.jpg)
 
-![MLPipeline](MLPipeline)
+![MLPipeline](MLPipeline.jpg)
 
 
 ## Acknowledgments
