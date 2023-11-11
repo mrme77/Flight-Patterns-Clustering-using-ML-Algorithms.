@@ -39,6 +39,7 @@ The following modules are required:
 | configparser	  | 0.4.1    | 
 | prettytable     | 3.09     |
 
+
 ## Data Sources
 
 The project utilizes de-identified synthetic streamed data, from an Automatic Dependent Surveillance–Broadcast (ADS-B) receiver connected to a Raspberry Pi running Pi Aware 7.2. Synthetic data ensure anonymization( remove or hash any columns that contain PII), randomization (randomize data elements that should not be traceable to individual flights), preserve statistical properties (ensure that the synthetic data maintains the same statistical properties as the original data, such as the mean, variance, and distribution of numerical variables), and maintain relationships (preserve any relationships or correlations between variables that are present in the real data). The original data sources include various flight-related information such as aircraft identifiers, timestamps, altitude, latitude, longitude, speed, heading, and transponder codes.
