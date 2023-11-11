@@ -66,7 +66,9 @@ The project utilizes de-identified synthetic streamed data, from an Automatic De
 + adsb_functions.py Contains the data description language (DDL) syntax for creation of tables as well as the data manipulation language (DML) for inserting data, and the the function (data_stream_and_store) the continuous streaming and storage of data received from a network socket connected to a Raspberry Pi running Pi Aware 7.2. 
 
 
+## Outputs
 
++ syntethic_flight_data.csv Contains the 1032 records used for the project.
 ## Flowchart
 
 ![Flowchart](flow.jpg)
