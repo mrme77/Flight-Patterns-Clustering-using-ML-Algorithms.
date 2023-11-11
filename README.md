@@ -39,7 +39,8 @@ The following modules are required:
 | configparser	  | 0.4.1    | 
 | prettytable     | 3.09     |
 
-```import pandas as pd
+```
+import pandas as pd
 import numpy as np
 import hashlib
 import folium
@@ -55,7 +56,8 @@ from scipy.stats import linregress
 from prettytable import PrettyTable
 import seaborn as sns
 import matplotlib.pyplot as plt
-from IPython.display import display, HTML```
+from IPython.display import display, HTML
+```
 
 
 ## Data Sources
