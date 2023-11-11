@@ -22,22 +22,6 @@ Date: November 3, 2023
 
 The following modules are required: 
 
-| Module          | Version  |    
-|-----------------|----------|    
-| time            | 3.11.4   |    
-| collections     | 3.11.4   |    
-| pandas          | 1.5.3    |    
-| numpy           | 1.23.2   |
-| collections     | 3.11.4   |
-| folium          | 0.13.1   |
-| matplotlib      | 3.5.3    |
-| os              | 1.11.0   |
-| haversine       | 3.2.1    |
-| sqlite3         | 3.39.2   |
-| linregress      | 1.9.3    |
-| socket	        | 2.1.7    |
-| configparser	  | 0.4.1    | 
-| prettytable     | 3.09     |
 
 ```
 import pandas as pd
