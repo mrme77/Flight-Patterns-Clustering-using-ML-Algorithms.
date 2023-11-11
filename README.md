@@ -39,6 +39,24 @@ The following modules are required:
 | configparser	  | 0.4.1    | 
 | prettytable     | 3.09     |
 
+```import pandas as pd
+import numpy as np
+import hashlib
+import folium
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+import os
+import haversine
+from folium.plugins import HeatMap
+from folium import PolyLine
+import sqlite3
+from shapely.geometry import Point
+from scipy.stats import linregress
+from prettytable import PrettyTable
+import seaborn as sns
+import matplotlib.pyplot as plt
+from IPython.display import display, HTML```
+
 
 ## Data Sources
 
