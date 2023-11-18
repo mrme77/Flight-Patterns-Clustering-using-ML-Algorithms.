@@ -6,8 +6,7 @@ Date: November 3, 2023
 
 ## Overview
 
-<p>This project delves into leveraging machine learning techniques to categorize flights based on similar altitude and speed patterns within a specific geographic re-gion, namely Southern Illinois. Specifically, it investigates and assesses two non-parametric clustering algorithms, K-means clustering and Mean Shift.The application of these clustering algorithms results in cluster labels for each data point, subsequently added as new features to the original dataset. Ultimately, the analysis of the data unveils a bustling airspace in the targeted geographical area, re-vealing two distinctive clusters indicative of diverse movement patterns.
-or trajectories</p>
+<p>This project delves into leveraging machine learning techniques to categorize flights based on similar altitude and speed patterns within a specific geographic re-gion, namely Southern Illinois. Specifically, it investigates and assesses two non-parametric clustering algorithms, K-means clustering and Mean Shift.The application of these clustering algorithms results in cluster labels for each data point, subsequently added as new features to the original dataset. Ultimately, the analysis of the data unveils a bustling airspace in the targeted geographical area, revealing two distinctive clusters indicative of diverse movement patterns or trajectories.</p>
 
 
 ![PI](pi_receiver.jpg)
