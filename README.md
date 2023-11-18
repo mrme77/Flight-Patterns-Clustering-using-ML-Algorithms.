@@ -6,7 +6,8 @@ Date: November 3, 2023
 
 ## Overview
 
-<p>This project is dedicated to the exploration of flight patterns using machine learning algorithms, specifically K-Means and Mean Shift. The primary objective is to cluster flight data based on relevant features, aiming to uncover potential flight patterns within the geographical area surrounding an ADSB receiver. Unlike traditional machine learning tasks, the dataset is not divided into training and testing sets, as the test set lacks true labels. Instead, the focus is on unsupervised clustering to group flights based on their characteristics. The ultimate goal is to gain insights into flight behavior and identify distinct patterns within the region of interest. The project uses syntethic data and simulates a connection to an ADSB receiver.</p>
+<p>This project delves into leveraging machine learning techniques to categorize flights based on similar altitude and speed patterns within a specific geographic re-gion, namely Southern Illinois. Specifically, it investigates and assesses two non-parametric clustering algorithms, K-means clustering and Mean Shift.The application of these clustering algorithms results in cluster labels for each data point, subsequently added as new features to the original dataset. Ultimately, the analysis of the data unveils a bustling airspace in the targeted geographical area, re-vealing two distinctive clusters indicative of diverse movement patterns
+or trajectories</p>
 
 
 ![PI](pi_receiver.jpg)
@@ -46,7 +47,7 @@ from IPython.display import display, HTML
 
 ## Data Sources
 
-The project utilizes de-identified synthetic streamed data, from an Automatic Dependent Surveillance–Broadcast (ADS-B) receiver connected to a Raspberry Pi running Pi Aware 7.2. Synthetic data ensure anonymization( remove or hash any columns that contain PII), randomization (randomize data elements that should not be traceable to individual flights), preserve statistical properties (ensure that the synthetic data maintains the same statistical properties as the original data, such as the mean, variance, and distribution of numerical variables), and maintain relationships (preserve any relationships or correlations between variables that are present in the real data). The original data sources include various flight-related information such as aircraft identifiers, timestamps, altitude, latitude, longitude, speed, heading, and transponder codes.
+The project utilizes de-identified synthetic streamed data, from an Automatic Dependent Surveillance–Broadcast (ADS-B) receiver connected to a Raspberry Pi running Pi Aware 7.2. Synthetic data ensure anonymization( remove or hash any columns that contain PII), randomization (randomize data elements that should not be traceable to individual flights), maintains statistical properties (ensure that the synthetic data maintains the same statistical properties as the original data, such as the mean, variance, and distribution of numerical variables), and maintain relationships (preserve any relationships or correlations between variables that are present in the real data). The original data sources include various flight-related information such as aircraft identifiers, timestamps, altitude, latitude, longitude, speed, heading, and transponder codes.
 
 ## Resources
 
@@ -75,6 +76,7 @@ The project utilizes de-identified synthetic streamed data, from an Automatic De
 
 ![MLPipeline](MLPipeline.jpg)
 
+## Results
 
 ## Acknowledgments
 
