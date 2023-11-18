@@ -5,7 +5,7 @@ import sys
 import adsb_functions
 
 
-#Handle Ctrl+C to gracefully exit the program
+# Ctrl+C to gracefully exit the program
 def signal_handler(sig, frame):
     print("Exiting the program.")
     sys.exit(0)
