@@ -79,6 +79,12 @@ The project utilizes de-identified synthetic streamed data, from an Automatic De
 ## Results
 ![Kmeans](k_means_clustering.jpg)
 
+<p>K-means clustering reveals the presence of two distinct clusters, indicating potential differentiation in movement patterns or trajectories. Cluster 0 is characterized by lower speeds and altitudes, suggesting a mode of movement with reduced intensity. In contrast, Cluster 1 exhibits higher speeds and
+altitudes, indicative of a more dynamic and elevated trajectory which could align with the cruising phase. The broader ranges in both speed and altitude
+observed in Cluster 0 imply a higher variability in movement compared to the more constrained patterns found in Cluster 1 which could align with the
+dynamic and variable nature of the takeoff phase. These findings provide insights into the diverse nature of the underlying data, highlighting distinct
+patterns in the two identified clusters. </p>
+
 ## Acknowledgments
 
 I would like to acknowledge Stackoverflow, ChatGPT, Google Bard as an instrumental aid in the development of this project.
