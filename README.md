@@ -6,7 +6,7 @@ Date: November 3, 2023
 
 ## Overview
 
-<p>This project delves into leveraging machine learning techniques to categorize flights based on similar altitude and speed patterns within a specific geographic re-gion, namely Southern Illinois. Specifically, it investigates and assesses two non-parametric clustering algorithms, K-means clustering and Mean Shift.The application of these clustering algorithms results in cluster labels for each data point, subsequently added as new features to the original dataset. Ultimately, the analysis of the data unveils a bustling airspace in the targeted geographical area, re-vealing two distinctive clusters indicative of diverse movement patterns
+<p>This project delves into leveraging machine learning techniques to categorize flights based on similar altitude and speed patterns within a specific geographic re-gion, namely Southern Illinois. Specifically, it investigates and assesses two non-parametric clustering algorithms, K-means clustering and Mean Shift.The application of these clustering algorithms results in cluster labels for each data point, subsequently added as new features to the original dataset. Ultimately, the analysis of the data unveils a bustling airspace in the targeted geographical area, re-vealing two distinctive clusters indicative of diverse movement patterns.
 or trajectories</p>
 
 
@@ -77,13 +77,14 @@ The project utilizes de-identified synthetic streamed data, from an Automatic De
 ![MLPipeline](MLPipeline.jpg)
 
 ## Results
-![Kmeans](k_means_clustering.jpg)
 
 <p>K-means clustering reveals the presence of two distinct clusters, indicating potential differentiation in movement patterns or trajectories. Cluster 0 is characterized by lower speeds and altitudes, suggesting a mode of movement with reduced intensity. In contrast, Cluster 1 exhibits higher speeds and
 altitudes, indicative of a more dynamic and elevated trajectory which could align with the cruising phase. The broader ranges in both speed and altitude
 observed in Cluster 0 imply a higher variability in movement compared to the more constrained patterns found in Cluster 1 which could align with the
 dynamic and variable nature of the takeoff phase. These findings provide insights into the diverse nature of the underlying data, highlighting distinct
 patterns in the two identified clusters. </p>
+
+![Kmeans](k_means_clustering.jpg)
 
 ## Acknowledgments
 
