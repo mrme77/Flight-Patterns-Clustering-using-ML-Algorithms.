@@ -77,7 +77,7 @@ The project utilizes de-identified synthetic streamed data, from an Automatic De
 ![MLPipeline](MLPipeline.jpg)
 
 ## Results
-![K-means][(k_means_clustering.jpg)
+![Kmeans](k_means_clustering.jpg)
 
 ## Acknowledgments
 
