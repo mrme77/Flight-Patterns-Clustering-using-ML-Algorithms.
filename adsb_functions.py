@@ -7,7 +7,7 @@ import time
 # Create a SQLite database and define flight_data and navigation tables
 def create_database():
     with sqlite3.connect('flight_data.db') as conn:
-        cursor = conn.cursor()
+         cursor = conn.cursor()
 
         # Create the flight_data and navigation_data tables using a single loop
         for table_name in ['flight_data', 'navigation_data']:
