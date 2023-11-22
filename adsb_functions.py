@@ -41,7 +41,7 @@ def data_stream_and_store():
         None
     """
     while True:
-        try:
+         try:
             # Connect to the SQLite database
             with sqlite3.connect('flight_data.db') as conn:
                 cursor = conn.cursor()
