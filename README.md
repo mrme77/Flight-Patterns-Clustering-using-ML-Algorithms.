@@ -88,7 +88,7 @@ patterns in the two identified clusters. </p>
 ![Kmeans](k_means_clustering.jpg)
 
 ## Overleaf Report
-The detailed report for this project is available on Overleaf. You can access it and view it ![Overleaf Project](https://www.overleaf.com/read/wgzqndwgvnfy#533ba5 ) 
+The detailed report for this project is available on Overleaf. You can access it and view it [Overleaf Project](https://www.overleaf.com/read/wgzqndwgvnfy#533ba5 ) 
 
 ## Acknowledgments
 
