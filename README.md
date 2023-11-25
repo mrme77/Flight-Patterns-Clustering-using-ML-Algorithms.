@@ -1,4 +1,4 @@
-# Flight Patterns Clustering using ML Algorithm
+# Flight Patterns Clustering using ML Algorithms
 
 Author: Pasquale Salomone
 <br>
